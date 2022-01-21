@@ -1,0 +1,15 @@
+body
+{
+  font-family: Tahoma, sans-serif;
+  color: silver;
+  background-color: teal; 
+}
+a { color: lightblue; }
+a:hover { color: red; }
+
+header
+{
+  font-family: Courier, serif;
+  text-align: center;
+  color: orange;
+}
