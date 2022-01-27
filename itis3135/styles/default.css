@@ -3,9 +3,17 @@ body
   font-family: Tahoma, sans-serif;
   color: #048BA8;
   background-color: #EBE9E9; 
+  margin-left: 50px;
+  margin-right: 50px;
 }
-a { color: #4BC0D9; }
-a:hover { color: #9BC53D; }
+a
+{ 
+  color: #4BC0D9;
+}
+a:hover
+{
+  color: #9BC53D;
+}
 
 header 
 {
