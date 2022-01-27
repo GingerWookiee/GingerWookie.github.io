@@ -1,5 +1,4 @@
-body
-{
+body {
   font-family: Tahoma, sans-serif;
   color: #048BA8;
   background-color: #EBE9E9; 
@@ -7,14 +6,16 @@ body
 a { color: #4BC0D9; }
 a:hover { color: #9BC53D; }
 
-header
-{
+header {
   font-family: Courier, serif;
   text-align: center;
   color: #34344A;
 }
 
-footer
-{
+footer {
+  text-align: center;
+}
+
+figure {
   text-align: center;
 }
