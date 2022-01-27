@@ -13,7 +13,14 @@ header
   text-align: center;
   color: #34344A;
 }
+
 footer
 {
   text-align: center;
+}
+
+main 
+{
+  margin-left: 100px;
+  margin-right: 100px;
 }
