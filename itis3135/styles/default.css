@@ -54,7 +54,7 @@ table tr:nth-child(1)
 {
   background-color:rgba(128,128,128,0.5)
 }
-table tr:nth-cild(3)
+table tr:nth-child(odd)
 {
   background-color:rgba(128,128,128,0.5);
 }
