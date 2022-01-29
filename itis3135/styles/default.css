@@ -52,9 +52,9 @@ th
 }
 table tr:nth-child(1)
 {
-  background-color:rgba(128,128,128,0.7)
+  background-color:rgba(128,128,128,0.5)
 }
-table tr:nth-cild(odd)
+table tr:nth-cild(3)
 {
   background-color:rgba(128,128,128,0.5);
 }
