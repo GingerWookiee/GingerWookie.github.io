@@ -8,8 +8,8 @@ var feeling;
 
 function welcomeWords()
 {
-    setName(prompt("Please enter your name", "Jessica"))
-    setFeeling(prompt("How are you feeling?", "so so"))
+    setName(prompt("What is your name", ""))
+    setFeeling(prompt("How are you feeling today?", ""))
     
     document.getElementById("words").innerHTML = "Welcomes to the Dusty Turtle, "
     + getName() + "!  We're glad to hear you are feeling " + getFeeling() + "!";
