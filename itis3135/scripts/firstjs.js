@@ -29,8 +29,7 @@ function getFeeling() {
     return feeling;
 }
 
-document.getElementById('date').innerHTML = "It is " 
-+ today.getTime() + " On " + today.getDate();
+document.getElementById('date').innerHTML = "It is " + getTime() + " On " + getDate();
 
 function getTime() {
     let date = new Date();
