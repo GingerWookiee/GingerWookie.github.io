@@ -3,10 +3,12 @@ function scriptTest()
     alert("Hey my script is running");
 }
 
+var name;
+var feeling;
+
 function welcomeWords()
 {
-    var name;
-    var feeling;
+    
 
     setName(prompt("Please enter your name", "Jessica"))
     setFeeling(prompt("How are you feeling?", "so so"))
