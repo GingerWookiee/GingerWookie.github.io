@@ -40,7 +40,7 @@ function getFeeling() {
  * from here to the next big comment is about the date 
 */
 function showDateTime(){
-    document.getElementById('date').innerHTML = 'It is ' + getCurrentTime() + ' on the ' + getCurrentDate();
+    document.getElementById('date').innerHTML = 'It is ' + getCurrentTime() + ' on ' + getCurrentDate();
 }
 
 function getCurrentDate() {
