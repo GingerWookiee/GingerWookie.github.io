@@ -40,9 +40,8 @@ function getFeeling() {
  * from here to the next big comment is about the date 
 */
 
-document.getElementById('date').innerHTML = "It is " + getCurrentTime() + " On " + getCurrentDate();
-
-function getCurrentDate() {
+document.getElementById('date').innerHTML = 'Today is: ' + getTodaysDate() + ', and the time is: ' + getCurrentTime();
+function getTodaysDate() {
     let date = new Date();
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
