@@ -16,6 +16,7 @@ function welcomeWords()
     setName(prompt("What is your name", ""))
     setFeeling(prompt("How are you feeling today?", ""))
     
+    document.getElementById('date').innerHTML = 'It is ' + getCurrentTime() + ' on the ' + getTodaysDate();
     document.getElementById("words").innerHTML = "Welcomes to the Dusty Turtle, "
     + getName() + "!  We're glad to hear you are feeling " + getFeeling() + "!";
 }
@@ -40,7 +41,6 @@ function getFeeling() {
  * from here to the next big comment is about the date 
 */
 
-document.getElementById('date').innerHTML = 'Today is: ' + getTodaysDate() + ', and the time is: ' + getCurrentTime();
 function getTodaysDate() {
     let date = new Date();
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
