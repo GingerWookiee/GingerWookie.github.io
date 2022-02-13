@@ -74,22 +74,22 @@ function daysToWeekend()
     let date= new Date();
     switch(date.getDay()){
         case 1:
-            document.getElementById("daysToWeekend").innerHTML = "There are 5 days until the weekend.";
+            document.getElementById("weekendDays").innerHTML = "There are 5 days until the weekend.";
             break;
         case 2:
-            document.getElementById("daysToWeekend").innerHTML = "There are 4 days until the weekend.";
+            document.getElementById("weekendDays").innerHTML = "There are 4 days until the weekend.";
             break;
         case 3:
-            document.getElementById("daysToWeekend").innerHTML = "There are 3 days until the weekend.";
+            document.getElementById("weekendDays").innerHTML = "There are 3 days until the weekend.";
             break;
         case 4:
-            document.getElementById("daysToWeekend").innerHTML = "There are 2 days until the weekend.";
+            document.getElementById("weekendDays").innerHTML = "There are 2 days until the weekend.";
             break;
         case 5:
-            document.getElementById("daysToWeekend").innerHTML = "The weekend is tomorrow!";
+            document.getElementById("weekendDays").innerHTML = "The weekend is tomorrow!";
             break;
         default:
-            document.getElementById("daysToWeekend").innerHTML = "it is the weekend!";
+            document.getElementById("weekendDays").innerHTML = "it is the weekend!";
 
     }
 }
