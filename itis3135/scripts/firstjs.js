@@ -21,36 +21,43 @@ function welcomeWords()
 }
 
 //setter and getter for name
-function setName(name){ 
+function setName(name)
+{ 
     this.name = name;
 }
-function getName() {
+function getName() 
+{
     return name;
 }
 
 //setter and getter for feeling
-function setFeeling(feeling) {
+function setFeeling(feeling) 
+{
     this.feeling = feeling;
 }
-function getFeeling() {
+function getFeeling() 
+{
     return feeling;
 }
 
 /*
  * from here to the next big comment is about the date 
 */
-function showDateTime(){
+function showDateTime()
+{
     document.getElementById('date').innerHTML = 'It is ' + getCurrentTime() + ' on ' + getCurrentDate();
 }
 
-function getCurrentDate() {
+function getCurrentDate() 
+{
     let date = new Date();
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     return days[date.getDay()] + ', ' + months[date.getMonth()] + ' ' + date.getDate();
 }
 
-function getCurrentTime() {
+function getCurrentTime() 
+{
     let date = new Date();
     let ampm = date.getHours() >= 12 ? 'PM' : 'AM';
     let mins = date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes();
@@ -59,5 +66,30 @@ function getCurrentTime() {
 
 
 /*
- * from here to the next big comment is about 
+ * from here to the next big comment is about the Days Until Weekend
 */
+
+function daysToWeekend()
+{
+    let date= new Date();
+    switch(date.getDay()){
+        case 1:
+            document.getElementById("daysToWeekend").innerHTML = "There are 5 days until the weekend.";
+            break;
+        case 2:
+            document.getElementById("daysToWeekend").innerHTML = "There are 4 days until the weekend.";
+            break;
+        case 3:
+            document.getElementById("daysToWeekend").innerHTML = "There are 3 days until the weekend.";
+            break;
+        case 4:
+            document.getElementById("daysToWeekend").innerHTML = "There are 2 days until the weekend.";
+            break;
+        case 5:
+            document.getElementById("daysToWeekend").innerHTML = "The weekend is tomorrow!";
+            break;
+        default:
+            document.getElementById("daysToWeekend").innerHTML = "it is the weekend!";
+
+    }
+}
