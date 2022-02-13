@@ -102,5 +102,5 @@ function daysLeftInSemester() {
     today = new Date();
     var endDay = new Date(today.getFullYear(), 4, 12)
     document.getElementById("semesterDays").innerHTML = 
-    (Math.ceil((endDay.getTime()-today.getTime())/(one_day))+ "days left in the semester. (end set for Spring 2022)"
+    (Math.ceil((endDay.getTime()-today.getTime())/(one_day))+ "days left in the semester. (end set for Spring 2022)";
 }
