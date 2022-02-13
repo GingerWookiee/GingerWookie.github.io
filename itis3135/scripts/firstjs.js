@@ -95,12 +95,25 @@ function daysToWeekend()
 }
 
 /*
- * from here to the next big comment is about
+ * from here to the end is about the Days Left in the Month
 */
 
-function daysLeftInSemester() {
-    today = new Date();
-    var endDay = new Date(today.getFullYear(), 4, 12)
-    document.getElementById("semesterDays").innerHTML = 
-    (Math.ceil((endDay.getTime()-today.getTime())/(one_day))+ "days left in the semester. (end set for Spring 2022)";
+function daysLeftInMonth() {
+    let date = new Date();
+    var days;
+    switch(date.getMonth()){
+        case(3):
+        case(5):
+        case(8):
+        case(10):
+            days = 30;
+            break;
+        case(1):
+            days = 28;
+            break;
+        default:
+            days = 31;
+    }
+    var daysLeft = days - date.getDay();
+    document.getElementById("monthDays").innerHTML = "There are " + daysLeft + " days left in the month.";
 }
