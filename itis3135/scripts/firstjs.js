@@ -21,9 +21,9 @@ function welcomeWords()
 }
 
 //setter and getter for name
-function setName(name)
+function setName(newName)
 { 
-    this.name = name;
+    this.name = newName;
 }
 function getName() 
 {
@@ -31,9 +31,9 @@ function getName()
 }
 
 //setter and getter for feeling
-function setFeeling(feeling) 
+function setFeeling(newFeeling) 
 {
-    this.feeling = feeling;
+    this.feeling = newFeeling;
 }
 function getFeeling() 
 {
@@ -72,7 +72,8 @@ function getCurrentTime()
 function daysToWeekend()
 {
     let date= new Date();
-    switch(date.getDay()){
+    switch(date.getDay())
+    {
         case 1:
             document.getElementById("weekendDays").innerHTML = "There are 5 days until the weekend.";
             break;
@@ -97,23 +98,26 @@ function daysToWeekend()
 /*
  * from here to the end is about the Days Left in the Month
 */
+var answer;
 
-function daysLeftInMonth() {
-    let date = new Date();
-    var days;
-    switch(date.getMonth()){
-        case(3):
-        case(5):
-        case(8):
-        case(10):
-            days = 30;
-            break;
-        case(1):
-            days = 28;
-            break;
-        default:
-            days = 31;
+function mathProblem() 
+{
+    setAnswer(prompt("What is 5(6+4)/2? Enter your answer as a number.", ""))
+    if(getAnswer() == 25 || getAnswer() == "25")
+    {
+        document.getElementById("math").innerHTML = "Correct!";
     }
-    var daysLeft = days - date.getDay();
-    document.getElementById("monthDays").innerHTML = "There are " + daysLeft + " days left in the month.";
+    else
+    {
+        document.getElementById("math").innerHTML = "Incorrect, the correct answer was 25.";
+    }
+    
+}
+
+function setAnswer(newAnswer){
+    this.answer = newAnswer;
+}
+
+function getAnswer(){
+    return answer;
 }
