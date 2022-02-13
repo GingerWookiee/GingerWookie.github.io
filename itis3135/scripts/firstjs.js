@@ -93,3 +93,7 @@ function daysToWeekend()
 
     }
 }
+
+/*
+ * from here to the next big comment is about
+*/
