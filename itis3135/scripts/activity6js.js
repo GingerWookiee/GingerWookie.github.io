@@ -4,7 +4,7 @@ var shapeName;
 
 function findShapeName()
 {
-    setSides(parseFloat(prompt("Enter your number between 0 and 10:")));
+    setSides(prompt("Enter your number between 0 and 10:", ""));
 
     while(i == 0)
     {
@@ -15,7 +15,7 @@ function findShapeName()
         }
         else
         {
-            setSides(parseFloat(prompt("You did not enter a number, please enter a number between 0 and 10:")));
+            setSides(prompt("You did not enter a number, please enter a number between 0 and 10:", ""));
         }
     }
     
@@ -73,7 +73,7 @@ function setShape(sides)
 
 function getShape()
 {
-    return shape;
+    return shapeName;
 }
 
 function validateInput(sides) 
