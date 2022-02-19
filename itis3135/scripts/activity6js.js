@@ -19,9 +19,7 @@ function findShapeName()
         }
     }
     
-    document.getElementById("polygons").innerHTML = "A shap with " + 
-    getSides() + " sides is called a(n) " + getShape() + ".";
-            
+    document.getElementById("polygons").innerHTML = "A shap with " + getSides() + " sides is called a(n) " + getShape() + "."; 
 }
 
 function setSides(newSides)
@@ -84,7 +82,7 @@ function validateInput(sides)
     {
         if (Math.abs(sides) >= 0 && Math.abs(sides) <= 10) 
         {
-            return true;
+            return (sides == sides));
         }
     }
 }
