@@ -1,6 +1,6 @@
 var x = 0;
-var sides;
-var shape;
+var sideCount;
+var shapeName;
 
 function findShapeName()
 {
@@ -26,11 +26,11 @@ function findShapeName()
 
 function setSides(newSides)
 {
-    this.sides = newSides;
+    this.sideCount = newSides;
 }
 function getSides()
 {
-    return sides;
+    return sideCount;
 }
 
 function setShape(sides)
@@ -38,37 +38,37 @@ function setShape(sides)
     switch (sides) 
     {
         case 0:
-            shape = "nonexistant shape";
+            shapeName = "nonexistant shape";
             break;
         case 1:
-            return "monogon";
+            shapeName = "monogon";
             break;
         case 2:
-            return "digon";
+            shapeName = "digon";
             break;
         case 3:
-            return "triangle";
+            shapeName = "triangle";
             break;
         case 4:
-            return "quadrilateral";
+            shapeName = "quadrilateral";
             break;
         case 5:
-            return "pentagon";
+            shapeName = "pentagon";
             break;
         case 6:
-            return "hexagon";
+            shapeName = "hexagon";
             break;
         case 7:
-            return "septagon";
+            shapeName = "septagon";
             break;
         case 8:
-            return "octagon";
+            shapeName = "octagon";
             break;
         case 9:
-            return "nonagon";
+            shapeName = "nonagon";
             break;
         case 10:
-            return "decagon";
+            shapeName = "decagon";
             break;
     }
 }
