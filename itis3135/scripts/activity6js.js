@@ -4,35 +4,36 @@ var shape;
 
 function findShapeName()
 {
-    sides = parseFloat(prompt("Enter your number between 0 and 10:"));
+    setSides(parseFloat(prompt("Enter your number between 0 and 10:")));
 
     while(i == 0)
     {
-        if(validateInput(sides))
+        if(validateInput(getSides()))
         {
-            document.getElementById("polygons").innerHTML = "A shap with " + sides +
-            " sides is called a(n) " + shape + ".";
+            setShape(getSides());
+
+            document.getElementById("polygons").innerHTML = "A shap with " + getSides() +
+            " sides is called a(n) " + getShape() + ".";
+            
             i = 1;
         }
         else
         {
-            sides = parseFloat(prompt("You did not enter a number, please enter a number between 0 and 10:"));
+            setSides(parseFloat(prompt("You did not enter a number, please enter a number between 0 and 10:")));
         }
     }
 }
 
-function validateInput(sides) 
+function setSides(newSides)
 {
-    if (typeof sides == 'number') 
-    {
-        if (Math.abs(sides) >= 0 && Math.abs(sides) <= 10) 
-        {
-            return true;
-        }
-    }
+    this.sides = newSides;
+}
+function getSides()
+{
+    return sides;
 }
 
-function getShape(sides) 
+function setShape(sides)
 {
     switch (sides) 
     {
@@ -69,5 +70,21 @@ function getShape(sides)
         case 10:
             return "decagon";
             break;
+    }
+}
+
+function getShape()
+{
+    return shape;
+}
+
+function validateInput(sides) 
+{
+    if (typeof sides == 'number') 
+    {
+        if (Math.abs(sides) >= 0 && Math.abs(sides) <= 10) 
+        {
+            return true;
+        }
     }
 }
