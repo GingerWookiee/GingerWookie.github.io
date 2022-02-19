@@ -79,7 +79,7 @@ function validateInput(sides)
 {
     if (typeof sides == 'number') 
     {
-        if (Math.abs(sides) >= 0 && Math.abs(sides) <= 10) 
+        if( sides >= -10 && sides <= 10) 
         {
             return (sides == sides);
         }
