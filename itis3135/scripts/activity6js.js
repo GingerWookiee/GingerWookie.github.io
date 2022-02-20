@@ -6,19 +6,33 @@ function findShapeName()
 {
     sideCount = parseFloat(prompt("Enter your number between 0 and 10:"));
 
-    while(x == 0)
-    {
-        if(validateInput(getSides()))
+    while (x == 0) {
+        if (validateEntry(sideCount)) 
         {
+            var shape = getShape(sideCount);
+            alert(shapeName);
             x = 1;
         }
-        else
+        else 
         {
-            sideCount = parseFloat(prompt("You did not enter a number, please enter a number between 0 and 10:"));
+            shapeSides = getError();
         }
     }
+    
     shapeName = setShape(sideCount); 
     document.getElementById("polygons").innerHTML = "A shap with " + sideCount + " sides is called a(n) " + getShape() + "."; 
+}
+
+function getNumber() 
+    {
+        var polygonNumber = parseFloat(prompt("Jolly Reindeer Designs welcomes you! Type a number 0-10 and we will tell you the name of a polygon with that many sides!"));
+        return polygonNumber;
+    }
+    
+function getError() 
+{
+    var polygonNumber = parseFloat(prompt("It looks like you typed in an invalid entry. Please type in a number 0 through 10."));
+    return polygonNumber;
 }
 
 function setShape(sides)
