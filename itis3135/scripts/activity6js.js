@@ -19,7 +19,7 @@ function findShapeName()
     }
 
     shapeName = setShape(sideCount); 
-    document.getElementById("polygons").innerHTML = "A shap with " + sideCount + " sides is called a(n) " + shapeName + "."; 
+    document.getElementById("polygons").innerHTML = "A shape with " + sideCount + " sides is called a(n) " + shapeName + "."; 
 }
 
 function validateInput(sides) 
