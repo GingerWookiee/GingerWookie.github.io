@@ -6,19 +6,19 @@ function findShapeName()
 {
     sideCount = parseFloat(prompt("Enter your number between 0 and 10:"));
 
-    /*while(i == 0)
+    while(x == 0)
     {
         if(validateInput(getSides()))
         {
-            i = 1;
+            x = 1;
         }
         else
         {
             sideCount = parseFloat(prompt("You did not enter a number, please enter a number between 0 and 10:"));
         }
     }
-    shapeName = setShape(sideCount); */
-    document.getElementById("polygons").innerHTML = /*"A shap with " + sideCount + " sides is called a(n) " + getShape() + "."*/ "i am outputing"; 
+    shapeName = setShape(sideCount); 
+    document.getElementById("polygons").innerHTML = "A shap with " + sideCount + " sides is called a(n) " + getShape() + "."; 
 }
 
 function setShape(sides)
