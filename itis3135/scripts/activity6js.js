@@ -8,7 +8,7 @@ function findShapeName()
 
     while(x == 0)
     {
-        if(validateInput(getSides()))
+        if(validateInput(sideCount))
         {
             x = 1;
         }
@@ -17,9 +17,20 @@ function findShapeName()
             sideCount = parseFloat(prompt("You did not enter a number, please enter a number between 0 and 10:"));
         }
     }
-    
+
     shapeName = setShape(sideCount); 
-    document.getElementById("polygons").innerHTML = "A shap with " + sideCount + " sides is called a(n) " + getShape() + "."; 
+    document.getElementById("polygons").innerHTML = "A shap with " + sideCount + " sides is called a(n) " + shapeName + "."; 
+}
+
+function validateInput(sides) 
+{
+    if (typeof sides == 'number') 
+    {
+        if (sides >= -10 && sides <= 10) 
+        {
+            return (sides == sides);
+        }
+    }
 }
 
 function setShape(sides)
@@ -63,13 +74,3 @@ function setShape(sides)
     }
 }
 
-function validateInput(sides) 
-{
-    if (typeof sides == 'number') 
-    {
-        if (sides >= -10 && sides <= 10) 
-        {
-            return (sides == sides);
-        }
-    }
-}
