@@ -49,9 +49,9 @@ function divide()
 function square()
 {
     var a;
-    a = parseFloat(prompt("What is the number you want to square?"));
+    a = parseFloat(prompt("What is the number?"));
 
-    var resultValue = a^2;
+    var resultValue = Math.pow(a,2);
     
     document.getElementById("result").innerHTML = "The answer is: " + resultValue;
 }
@@ -63,7 +63,7 @@ function exponent()
     a = parseFloat(prompt("What is the first number?"));
     b = parseFloat(prompt("What is the second number?"));
 
-    var resultValue = a^b;
+    var resultValue = Math.pow(a,b);
     
     document.getElementById("result").innerHTML = "The answer is: " + resultValue;
 }
@@ -72,8 +72,7 @@ function root()
 {
     var a;
     var b;
-    a = parseFloat(prompt("What is the first number?"));
-    b = parseFloat(prompt("What is the second number?"));
+    a = parseFloat(prompt("What is the number?"));
 
     var resultValue = Math.sqrt(a);
     
