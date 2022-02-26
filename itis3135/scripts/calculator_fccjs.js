@@ -68,11 +68,12 @@ window.onload = function () {
             calculator.dataset.firstValue = displayedNum
             calculator.dataset.operator = action
           }
-      
-          if (action === 'clear') 
-          {
+
+        if (action === 'clear') 
+        {   
+            display.textContent = 0
             calculator.dataset.previousKeyType = 'clear'
-          }
+        }
       
           if (action === 'calculate') 
           {
