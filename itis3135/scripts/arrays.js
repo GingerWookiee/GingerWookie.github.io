@@ -1,6 +1,7 @@
 var names = ["Daniel", "Bobby", "Isabel", "Tim", "Gracie"];
 var salaries = [0, 0, 0, 0, 0];
 
+var $ = function (id) { return document.getElementById(id); };
 
 function addSalary()
 {
