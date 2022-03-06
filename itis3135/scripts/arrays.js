@@ -3,12 +3,19 @@ var salaries = [0, 0, 0, 0, 0];
 
 var $ = function (id) { return document.getElementById(id); };
 
+window.onload = function () {
+    document.getElementById("display_results").onclick = displayResults;
+    document.getElementById("add_salary").onclick = addSalary;
+    document.getElementById("display_salary").onclick = displaySalary;
+    document.getElementById("names").focus();
+};
+
 function addSalary()
 {
     var nameInput = document.getElementById("names").value;
     var salaryInput = document.getElementById("salaries").value;
 
-    if(salaryInput>150 || salaryInput<10|| salaryInput == ""){
+    if(salaryInput == ""){
         alert("You must enter a name and a valid salary");
         salaryInput = "";
         $("names").focus();
