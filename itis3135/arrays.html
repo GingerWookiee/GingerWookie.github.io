@@ -13,11 +13,22 @@
             <h2>
                 Arrays
             </h2>
-            <p>
-                
-            </p>
+            <label for="people">Employee: </label>
+            <select name="people" id="people" size="1">
+                <option value="Daniel">Daniel</option>
+                <option value="Bobby">Bobby</option>
+                <option value="Isabel">Isabel</option>
+                <option value="Tim">Tim</option>
+                <option value="Gracie">Gracie</option>
+            </select>
+
+
+            <button onclick="addSalary()">Add Salary</button>
+            <button onclick="displaySalary()">Display Salary</button>
+            <button onclick="displayResults()">Display Results</button>
         </main>
         <div data-include="components/footer.html"></div>
         <script src="scripts/htmlinclude.js"></script>
+        <script src="scripts/arrays.js"></script>
     </body>
 </html>
