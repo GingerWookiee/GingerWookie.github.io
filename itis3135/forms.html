@@ -22,15 +22,21 @@
                 <input type="text" name="phone" placeholder="000-000-0000">
                 <br>
                 <label>Email:</label>
-                <input type="text" name="email" placeholder="mail@mail.com"><br>
+                <input type="text" name="email" placeholder="mail@mail.com">
                 <br>
-                <label><u><strong>Additional Info:</strong></u></label><br>
+                <br>
+                <label><u><strong>Additional Info:</strong></u></label>
+                <br>
+                
                 <label><strong>What is your prefered way of contact?</strong></label><br>
-                <label>
-                    <input type="checkbox" id="text" name="contact">Text
-                    <input type="checkbox" id="email" name="contact">Email
-                </label>
-                <br><br>
+                
+                <input type="checkbox" name="contact" id="text" >
+                <label for="text">Text</label>
+
+                <input type="checkbox" name="contact" id="email" >
+                <label for="email">Email</label>
+                <br>
+                <br>
                 <label><strong>What type of contact do you want?</strong></label><br>
                 <label for="notify">
                     <input type="radio" id="notify" name="notify" value="letter">Newsletters
