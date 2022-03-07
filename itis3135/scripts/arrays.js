@@ -71,7 +71,7 @@ function displaySalary()
     var html = "";
     html += "<tr><th>Name</th> <th>Salary</th></tr>"
     for(k=0;k<salary.length;k++){
-        html+="<tr><td>" + names[k] + "</td><td>" + salary[k]+" k</td></tr>";
+        html+="<tr><td>" + names[k] + "</td><td>$" + salary[k]+"</td></tr>";
     }
     html+="</table>";
     $("resultsTable").innerHTML = "<h2>Salaries</h2>" + html;
