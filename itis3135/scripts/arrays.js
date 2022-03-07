@@ -62,16 +62,17 @@ function displayResults()
     }
 
 
-    $("results").innerHTML = "<h2>Results</h2>" + "<p>Average salary is " + average + " thousand"
-        +"</p>" + "<p>The highest salary was for " +names[highest] + " with a salary of " + max + "</p>" ;
+    $("results").innerHTML = "<h2>Results</h2>" + "<p>Average salary is " 
+        + average + " thousand" +"</p>" + "<p>The highest salary was for " 
+        + names[highest] + " with a salary of " + max + "</p>" ;
 }
 
 function displaySalary()
 {
     var html = "";
     html += "<tr><th>Name</th> <th>Salary</th></tr>"
-    for(k=0;k<salary.length;k++){
-        html+="<tr><td>" + names[k] + "</td><td>$" + salary[k]+"</td></tr>";
+    for(i=0;i<salary.length;i++){
+        html+="<tr><td>" + names[i] + "</td><td>$" + salary[i]+"</td></tr>";
     }
     html+="</table>";
     $("resultsTable").innerHTML = "<h2>Salaries</h2>" + html;
