@@ -10,10 +10,10 @@
     <body>
         <div data-include="components/header.html"></div>
         <main>
-            <h2>
-                Arrays
-            </h2>
             <div>
+                <h2>
+                    Arrays
+                </h2>
                 <label for="names">Employee Name: </label>
                 <select name="names" id="names">
                     <option value="Daniel">Daniel</option>
@@ -26,15 +26,13 @@
 
                 <label for="salary">Employee Salary: $</label>
                 <input type="number" id="salary">
+
+                <input type="button" id="addSalary" value="Add Salary">
+                <input type="button" id="displayResults" value="Display Results">
+                <input type="button" id="displaySalary" value="Display Salary"><br>
             </div>
 
-            <label></label>
-            <input type="button" id="addSalary" value="Add Salary">
-            <input type="button" id="displayResults" value="Display Results">
-            <input type="button" id="displaySalary" value="Display Salary"><br>
-
             <div id="results"></div>
-
             <table id="resultsTable"></table>
         </main>
         <div data-include="components/footer.html"></div>
