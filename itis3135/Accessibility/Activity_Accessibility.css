@@ -45,7 +45,7 @@ th {
   text-align: left;
   background-color:#262626;
  
-  color:black;
+  color:powderblue;
 }
 
 table.center {
@@ -60,9 +60,6 @@ form {
   display: inline-block;
   color:black;
 }
-
-
-
 
 abbr {
   text-decoration: none;
