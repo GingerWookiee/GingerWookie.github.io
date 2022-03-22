@@ -1,9 +1,7 @@
-window.onload = whatUp();
-
-var $ = function (id) 
-{ 
-    return document.getElementById(id); 
-}
+window.onload = function()
+{
+    whatUp();
+};
 
 function allDown()
 {
@@ -36,17 +34,17 @@ function whenUp()
 function whereUp()
 {
     allDown();
-    $("where").style.display = "block";
+    document.getElementById("where").style.display = "block";
 }
 
 function howUp()
 {
     allDown();
-    $("how").style.display = "block";
+    document.getElementById("how").style.display = "block";
 }
 
 function whyUp()
 {
     allDown();
-    $("why").style.display = "block";
+    document.getElementById("why").style.display = "block";
 }
