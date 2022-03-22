@@ -7,30 +7,30 @@ var $ = function (id)
 
 function allDown()
 {
-    $("what").style.display = "none";
-    $("who").style.display = "none";
-    $("where").style.display = "none";
-    $("when").style.display = "none";
-    $("why").style.display = "none";
-    $("how").style.display = "none";
+    document.getElementById("what").style.display = "none";
+    document.getElementById("who").style.display = "none";
+    document.getElementById("where").style.display = "none";
+    document.getElementById("when").style.display = "none";
+    document.getElementById("why").style.display = "none";
+    document.getElementById("how").style.display = "none";
 }
 
 function whatUp()
 {
     allDown();
-    $("what").style.display = "block";
+    document.getElementById("what").style.display = "block";
 }
 
 function whoUp()
 {
     allDown();
-    $("who").style.display = "block";
+    document.getElementById("who").style.display = "block";
 }
 
 function whenUp()
 {
     allDown();
-    $("when").style.display = "block";
+    document.getElementById("when").style.display = "block";
 }
 
 function whereUp()
