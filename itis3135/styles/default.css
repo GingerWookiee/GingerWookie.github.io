@@ -187,9 +187,13 @@ main div
   .demo
   {
     opacity: 0.6;
+    background: none;
+    border: none;
   }
 
   .demo:hover
   {
     opacity: 1;
+    background: none;
+    border: none;
   }
