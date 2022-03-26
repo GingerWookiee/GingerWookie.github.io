@@ -18,7 +18,7 @@ allDown()
 main1Up()
 {
     allDown();
-    document.getElementById("mai1").style.display = "block";
+    document.getElementById("main1").style.display = "block";
     numberUp = 1;
 }
 
