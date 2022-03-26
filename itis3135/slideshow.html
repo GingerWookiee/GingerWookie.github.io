@@ -5,7 +5,8 @@
         <title>
             Daniel Teague | ITIS 3135 | Dusty Turtle | Slideshow
         </title>
-        <link href = "styles/activity_9.css" type = "text/css" rel = "stylesheet">
+        <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
+        <script src="scripts/slideshow.js"></script>
     </head>
     <body>
         <div data-include="components/header.html"></div>
@@ -13,71 +14,47 @@
             <h2>
                 Slideshow
             </h2>
-            
-            <div class="container">
+            <figure id="main1">
+                <img src="images/woods.jpg" alt="The Woods">
+                <figcaption></figcaption>
+            </figure>
 
-                <!-- Full-width images with number text -->
-                <div class="mySlides">
-                  <div class="numbertext">1 / 6</div>
-                    <img src="images/woods.jpg" style="width:100%">
-                </div>
-              
-                <div class="mySlides">
-                  <div class="numbertext">2 / 6</div>
-                    <img src="images/waterfall.jpg" style="width:100%">
-                </div>
-              
-                <div class="mySlides">
-                  <div class="numbertext">3 / 6</div>
-                    <img src="images/creek.jpg" style="width:100%">
-                </div>
-              
-                <div class="mySlides">
-                  <div class="numbertext">4 / 6</div>
-                    <img src="images/lake.jpg" style="width:100%">
-                </div>
-              
-                <div class="mySlides">
-                  <div class="numbertext">5 / 6</div>
-                    <img src="images/mountain_pond.jpg" style="width:100%">
-                </div>
-              
-                <div class="mySlides">
-                  <div class="numbertext">6 / 6</div>
-                    <img src="images/field_tree.jpg" style="width:100%">
-                </div>
-              
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              
-                <!-- Image text -->
-                <div class="caption-container">
-                  <p id="caption"></p>
-                </div>
-              
-                <!-- Thumbnail images -->
-                <div class="row">
-                  <div class="column">
-                    <img class="demo cursor" src="images/woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor" src="images/waterfall.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor" src="images/creek.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor" src="images/lake.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor" src="images/mountain_pond.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor" src="images/field_tree.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-                  </div>
-                </div>
-              </div>
+            <figure id="main2">
+                <img src="images/waterfall.jpg" alt="A waterfall">
+                <figcaption></figcaption>
+            </figure>
+
+            <figure id="main3">
+                <img src="images/creek.jpg" alt="A Creek">
+                <figcaption></figcaption>
+            </figure>
+
+            <figure id="main4">
+                <img src="images/lake.jpg" alt="A Lake">
+                <figcaption></figcaption>
+            </figure>
+
+            <figure id="main5">
+                <img src="images/mountain_pond.jpg" alt="A Pond in the Mountains">
+                <figcaption></figcaption>
+            </figure>
+
+            <figure id="main6">
+                <img src="images/field_tree.jpg" alt="A Tree in a Field">
+                <figcaption></figcaption>
+            </figure>
+            
+            <br>
+            <button onclick="prev()">Previous</button>
+            <button onclick="next()">Next</button>
+            <br>
+            <button onclick="main1Up()"><img src="images/woods.jpg" alt="The Woods"></button>
+            <button onclick="main2Up()"><img src="images/waterfall.jpg" alt="A waterfall"></button>
+            <button onclick="main3Up()"><img src="images/creek.jpg" alt="A Creek"></button>
+            <button onclick="main4Up()"><img src="images/lake.jpg" alt="A Lake"></button>
+            <button onclick="main5Up()"><img src="images/mountain_pond.jpg" alt="A Pond in the Mountains"></button>
+            <button onclick="main6Up()"><img src="images/field_tree.jpg" alt="A Tree in a Field"></button>
+            
         </main>
         <div data-include="components/footer.html"></div>
         <script src="scripts/htmlinclude.js"></script>
