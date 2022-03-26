@@ -5,7 +5,7 @@ window.onload = function()
     main1Up();
 };
 
-allDown()
+function allDown()
 {
     document.getElementById("main1").style.display = "none";
     document.getElementById("main2").style.display = "none";
@@ -15,42 +15,42 @@ allDown()
     document.getElementById("main6").style.display = "none";
 }
 
-main1Up()
+function main1Up()
 {
     allDown();
     document.getElementById("main1").style.display = "block";
     numberUp = 1;
 }
 
-main2Up()
+function main2Up()
 {
     allDown();
     document.getElementById("main2").style.display = "block";
     numberUp = 2;
 }
 
-main3Up()
+function main3Up()
 {
     allDown();
     document.getElementById("main3").style.display = "block";
     numberUp = 3;
 }
 
-main4Up()
+function main4Up()
 {
     allDown();
     document.getElementById("main4").style.display = "block";
     numberUp = 4;
 }
 
-main5Up()
+function main5Up()
 {
     allDown();
     document.getElementById("main5").style.display = "block";
     numberUp = 5;
 }
 
-main6Up()
+function main6Up()
 {
     allDown();
     document.getElementById("main6").style.display = "block";
@@ -58,7 +58,7 @@ main6Up()
 }
 
 
-next()
+function next()
 {
     switch(numberUp+1)
     {
@@ -83,7 +83,7 @@ next()
     }
 }
 
-prev()
+function prev()
 {
     switch(numberUp-1)
     {
