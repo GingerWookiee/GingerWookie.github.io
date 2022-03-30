@@ -1,0 +1,23 @@
+body 
+{
+  font-family: Tahoma, sans-serif;
+  color: #547AA5;
+  background-color: #F4EBE8; 
+  margin-left: 50px;
+  margin-right: 50px;
+}
+a
+{ 
+  color: #4ECDC4;
+}
+a:hover
+{
+  color: #CC2936;
+}
+
+header 
+{
+  font-family: Courier, serif;
+  text-align: center;
+  color: #0E1C36;
+}
