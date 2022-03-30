@@ -9,10 +9,12 @@ body
 a
 { 
   color: #4ECDC4;
+  text-decoration: none;
 }
 a:hover
 {
   color: #CC2936;
+  text-decoration: none;
 }
 
 header 
