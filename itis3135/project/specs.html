@@ -6,11 +6,12 @@
             Kismet | Specs
         </title>
         <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
+        <script src="scripts/interior_exterior.js"></script>
     </head>
     <body>
         <div data-include="components/header.html"></div>
         <main>
-            <h2>
+            <h2 id="top">
                 Van Specs & exterior
             </h2>
             <p>
@@ -18,39 +19,45 @@
                 the van, and what changes there will be on the exterior 
                 of the van. 
             </p>
-            <h3>
-                The Van
-            </h3>
-            <p>
-                The van is a 2010 Mercedes-Benz Sprinter Cargo van with a 
-                170" extended wheelbase and a High roof. This means that the 
-                van came with no windows behind the cabin on the sides, and 
-                a high roof means that the interior of the van is extended from 
-                a height of 68.7 inches to a height of 79.1, giving an increase 
-                of 10.4 inches in height for the interior of the van. The sprinter 
-                lineup has a few different wheelbase lengths, being 144", 170", and 
-                170" extended. This transfers to 19.4 feet, 22.8 feet, and 24.2 feet 
-                wheelspan respectively. The van being converted is using the 170" 
-                extended wheelbase, which is the biggest because the wheels are far 
-                appart, like the 170" wheelbase, but also has more added to the back 
-                of the van to extend the frame for the longest wheelbase available. 
-                The desil engine, transmission, and suspension will be kept stock, 
-                and there are additional features such as the back door full swivel 
-                hinges.
-            </p>
-            <br>
-            <h3>
-                Plans
-            </h3>
-            <p>
-                The diferential might need to be replaced down the line for safety, 
-                but it is not needed to be replaced at the current time. We are 
-                planning on attaching solar pannels to the roof, most likely using an 
-                ecoflow power system. Ater installing that, along with other things 
-                like a fan and/or windows, along with removing the cargo wall, I 
-                plan to re-seal the vehicle, removing surface rust and scuff marks, 
-                and repaint part of, or all of the van. 
-            </p>
+            <button class="plan" onclick="">Skip to Plans</button>
+            <section id="current">
+                <h3>
+                    The Van
+                </h3>
+                <p>
+                    The van is a 2010 Mercedes-Benz Sprinter Cargo van with a 
+                    170" extended wheelbase and a High roof. This means that the 
+                    van came with no windows behind the cabin on the sides, and 
+                    a high roof means that the interior of the van is extended from 
+                    a height of 68.7 inches to a height of 79.1, giving an increase 
+                    of 10.4 inches in height for the interior of the van. The sprinter 
+                    lineup has a few different wheelbase lengths, being 144", 170", and 
+                    170" extended. This transfers to 19.4 feet, 22.8 feet, and 24.2 feet 
+                    wheelspan respectively. The van being converted is using the 170" 
+                    extended wheelbase, which is the biggest because the wheels are far 
+                    appart, like the 170" wheelbase, but also has more added to the back 
+                    of the van to extend the frame for the longest wheelbase available. 
+                    The desil engine, transmission, and suspension will be kept stock, 
+                    and there are additional features such as the back door full swivel 
+                    hinges.
+                </p>
+            </section>
+            <hr>
+            <section id="plans">
+                <h3>
+                    Plans
+                </h3>
+                <p>
+                    The diferential might need to be replaced down the line for safety, 
+                    but it is not needed to be replaced at the current time. We are 
+                    planning on attaching solar pannels to the roof, most likely using an 
+                    ecoflow power system. Ater installing that, along with other things 
+                    like a fan and/or windows, along with removing the cargo wall, I 
+                    plan to re-seal the vehicle, removing surface rust and scuff marks, 
+                    and repaint part of, or all of the van. 
+                </p>
+            </section>
+            <button class="top" onclick="">Return to Top</button>
         </main>
         <div data-include="components/footer.html"></div>
         <script src="scripts/htmlinclude.js"></script>
