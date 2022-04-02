@@ -3,7 +3,7 @@
     <head>
         <meta charset= "utf-8" >
         <title>
-            Kimset | Timeline
+            Kismet | Timeline
         </title>
         <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
     </head>
@@ -11,9 +11,41 @@
         <div data-include="components/header.html"></div>
         <main>
             <h2>
-                
+                Timeline
             </h2>
-            
+            <p>
+                select a button for which timeline calculator you want, and 
+                input values for the following catagories: demo, 
+                window instulation, roof instalation(includes solar, fan, 
+                etc.), dry in, insulation, walls, plumbing, electric, 
+                furniture building, funiture instaliation, exterior painting, 
+                interior painting, final touches, moving in.
+            </p>
+            <button class="time">Time</button>
+            <button class="cost">Cost</button>
+
+            <section id="time">
+                <h3>
+                    This helps to calculate and keep trackof the time 
+                    spent on the van conversion.
+                </h3>
+                <p>
+                    here will be blanks with input in days for the the 
+                    time sections listed above, and an output will print 
+                    at the bottom.
+                </p>
+            </section>
+            <section id="cost">
+                <h3>
+                    This helps to calculate and keep track of the costs 
+                    incurred by the van conversion.
+                </h3>
+                <p>
+                    here will be blanks with input in USD for the time 
+                    sections listed above, and an output will print at 
+                    the bottom.
+                </p>
+            </section>
         </main>
         <div data-include="components/footer.html"></div>
         <script src="scripts/htmlinclude.js"></script>
