@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset= "utf-8" >
+        <title>
+            Daniel Teague | ITIS 3135 | Dusty Turtle | Image Swap
+        </title>
+        <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
+        <script src="scripts/slideshow.js"></script>
+    </head>
+    <body>
+        <div data-include="components/header.html"></div>
+        <main>
+            <h2>
+                Image Swap
+            </h2>
+            <br>
+            <button class="demo" onclick="main1Up()"><img src="images/woods_small.jpg" alt="The Woods"></button>
+                <button class="demo" onclick="main2Up()"><img src="images/waterfall_small.jpg" alt="A waterfall"></button>
+                <button class="demo" onclick="main3Up()"><img src="images/creek_small.jpg" alt="A Creek"></button>
+                <button class="demo" onclick="main4Up()"><img src="images/lake_small.jpg" alt="A Lake"></button>
+                <button class="demo" onclick="main5Up()"><img src="images/mountain_pond_small.jpg" alt="A Pond in the Mountains"></button>
+                <button class="demo" onclick="main6Up()"><img src="images/field_tree_small.jpg" alt="A Tree in a Field"></button>
+            <br>
+            <div>
+                <p>click on a thumbnail above to show the picture larger below.</p>
+                <section id="main1">
+                    <h3>The Woods</h3>
+                    <img src="images/woods.jpg" alt="The Woods">
+                </section>
+                <section id="main2">
+                    <h3>A waterfall</h3>
+                    <img src="images/waterfall.jpg" alt="A waterfall">
+                </section>
+                <section id="main3">
+                    <h3>A Creek</h3>
+                    <img src="images/creek.jpg" alt="A Creek">
+                </section>
+                <section id="main4">
+                    <h3>A Lake</h3>
+                    <img src="images/lake.jpg" alt="A Lake">
+                </section>
+                <section id="main5">
+                    <h3>A Pond in the Mountains</h3>
+                    <img src="images/mountain_pond.jpg" alt="A Pond in the Mountains">
+                </section>
+                <section id="main6">
+                    <h3>A Tree in a Field</h3>
+                    <img src="images/field_tree.jpg" alt="A Tree in a Field">
+                </section>
+            </div>
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/htmlinclude.js"></script>
+    </body>
+</html>
