@@ -38,8 +38,10 @@ function calculateTime()
     var int6 = parseInt(input6);
     var input7 = document.getElementById("time7").value;
     var int7 = parseInt(input7);
+    var input8 = document.getElementById("time8").value;
+    var int8 = parseInt(input8);
 
-    var sum = int1 + int2 + int3 + int4 + int5 + int6 + int7;
+    var sum = int1 + int2 + int3 + int4 + int5 + int6 + int7 + int8;
     var weeksFloat = sum / 7;
     var weeks = parseInt(weeksFloat);
     var weekdays = sum % 7;
@@ -49,7 +51,7 @@ function calculateTime()
 
 
 //Cost Functionality
-function calculateTime()
+function calculateCost()
 {
     var input1 = document.getElementById("cost1").value;
     var int1 = parseInt(input1);
@@ -65,8 +67,10 @@ function calculateTime()
     var int6 = parseInt(input6);
     var input7 = document.getElementById("cost7").value;
     var int7 = parseInt(input7);
+    var input8 = document.getElementById("cost8").value;
+    var int8 = parseInt(input8);
 
-    var sum = int1 + int2 + int3 + int4 + int5 + int6 + int7;
+    var sum = int1 + int2 + int3 + int4 + int5 + int6 + int7 + int8;
 
     document.getElementById("result").innerHTML = "<p>Your total cost for the planned work is $" + sum.toString() + ".</p>";
 }
