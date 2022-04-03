@@ -16,11 +16,17 @@
             </h2>
             <p>
                 select a button for which timeline calculator you want, and 
-                input values for the following catagories: demo, 
-                window instulation, roof instalation(includes solar, fan, 
-                etc.), dry in, insulation, walls, plumbing, electric, 
-                furniture building, funiture instaliation, exterior painting, 
-                interior painting, final touches, moving in.
+                input values for the following catagories: 
+                <ol>
+                    <li>Demo</li>
+                    <li>Exterior instalations(solar, fans, windows etc.)</li>
+                    <li>Dry in and insulation</li>
+                    <li>Plumbing and electric</li>
+                    <li>Interior wall and furniture building</li>
+                    <li>Interior wall and funiture instaliation</li>
+                    <li>Painting(both exterior and interior)</li>
+                    <li>Final touches</li>
+                </ol>
             </p>
             <button class="time">Time</button>
             <button class="cost">Cost</button>
@@ -31,10 +37,33 @@
                     spent on the van conversion.
                 </h3>
                 <p>
-                    here will be blanks with input in days for the the 
-                    time sections listed above, and an output will print 
-                    at the bottom.
+                    Please input all data as a number in the context of 
+                    the number of days each part is planned to take 
+                    for each of the parts listed above.
                 </p>
+                <label for="part1">Part 1:</label>
+                <input type="number" id="part1">
+                <br>
+                <label for="part2">Part 2:</label>
+                <input type="number" id="part2">
+                <br>
+                <label for="part3">Part 3:</label>
+                <input type="number" id="part3">
+                <br>
+                <label for="part4">Part 4:</label>
+                <input type="number" id="part4">
+                <br>
+                <label for="part5">Part 5:</label>
+                <input type="number" id="part5">
+                <br>
+                <label for="part6">Part 6:</label>
+                <input type="number" id="part6">
+                <br>
+                <label for="part7">Part 7:</label>
+                <input type="number" id="part7">
+                <br>
+                <button id="submit" onclick="calculate()">Claculate</button>
+                <div id="result"></div>
             </section>
             <section id="cost">
                 <h3>
