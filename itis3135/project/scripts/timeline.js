@@ -36,7 +36,7 @@ function calculate()
     var weeks = sum / 7;
     var weekdays = sum % 7;
 
-    document.getElementById("result").innerHTML = "<p>Your total number of days of work is " + sum + " days, <br> or " + weeks + " weeks and " + weekdays + " days.</p>";
+    document.getElementById("result").innerHTML = "<p>Your total number of days of work is " + sum.toString() + " days, <br> or " + weeks.toString() + " weeks and " + weekdays.toString() + " days.</p>";
 }
 
 
