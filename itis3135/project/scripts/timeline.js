@@ -22,21 +22,21 @@ function costUp()
 }
 
 //Time Functionality
-function calculate()
+function calculateTime()
 {
-    var input1 = document.getElementById("part1").value;
+    var input1 = document.getElementById("time1").value;
     var int1 = parseInt(input1);
-    var input2 = document.getElementById("part2").value;
+    var input2 = document.getElementById("time2").value;
     var int2 = parseInt(input2);
-    var input3 = document.getElementById("part3").value;
+    var input3 = document.getElementById("time3").value;
     var int3 = parseInt(input3);
-    var input4 = document.getElementById("part4").value;
+    var input4 = document.getElementById("time4").value;
     var int4 = parseInt(input4);
-    var input5 = document.getElementById("part5").value;
+    var input5 = document.getElementById("time5").value;
     var int5 = parseInt(input5);
-    var input6 = document.getElementById("part6").value;
+    var input6 = document.getElementById("time6").value;
     var int6 = parseInt(input6);
-    var input7 = document.getElementById("part7").value;
+    var input7 = document.getElementById("time7").value;
     var int7 = parseInt(input7);
 
     var sum = int1 + int2 + int3 + int4 + int5 + int6 + int7;
@@ -49,3 +49,24 @@ function calculate()
 
 
 //Cost Functionality
+function calculateTime()
+{
+    var input1 = document.getElementById("cost1").value;
+    var int1 = parseInt(input1);
+    var input2 = document.getElementById("cost2").value;
+    var int2 = parseInt(input2);
+    var input3 = document.getElementById("cost3").value;
+    var int3 = parseInt(input3);
+    var input4 = document.getElementById("cost4").value;
+    var int4 = parseInt(input4);
+    var input5 = document.getElementById("cost5").value;
+    var int5 = parseInt(input5);
+    var input6 = document.getElementById("cost6").value;
+    var int6 = parseInt(input6);
+    var input7 = document.getElementById("cost7").value;
+    var int7 = parseInt(input7);
+
+    var sum = int1 + int2 + int3 + int4 + int5 + int6 + int7;
+
+    document.getElementById("result").innerHTML = "<p>Your total cost for the planned work is $" + sum.toString() + ".</p>";
+}
