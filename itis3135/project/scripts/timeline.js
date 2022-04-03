@@ -46,7 +46,7 @@ function calculateTime()
     var weeks = parseInt(weeksFloat);
     var weekdays = sum % 7;
 
-    document.getElementById("result").innerHTML = "<p>Your total number of days of work is " + sum.toString() + " days, <br> or " + weeks.toString() + " weeks and " + weekdays.toString() + " days.</p>";
+    document.getElementById("timeResult").innerHTML = "<p>Your total number of days of work is " + sum.toString() + " days, <br> or " + weeks.toString() + " weeks and " + weekdays.toString() + " days.</p>";
 }
 
 
@@ -72,5 +72,5 @@ function calculateCost()
 
     var sum = int1 + int2 + int3 + int4 + int5 + int6 + int7 + int8;
 
-    document.getElementById("result").innerHTML = "<p>Your total cost for the planned work is $" + sum.toString() + ".</p>";
+    document.getElementById("costResult").innerHTML = "<p>Your total cost for the planned work is $" + sum.toString() + ".</p>";
 }
