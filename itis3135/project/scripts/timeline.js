@@ -24,20 +24,13 @@ function costUp()
 //Time Functionality
 function calculate()
 {
-    var part1;
-    part1 = document.getElementById("part1");
-    var part2;
-    part2= document.getElementById("part2");
-    var part3;
-    part3 = document.getElementById("part3");
-    var part4;
-    part4 = document.getElementById("part4");
-    var part5;
-    part5 = document.getElementById("part5");
-    var part6;
-    part6 = document.getElementById("part6");
-    var part7;
-    part7 = document.getElementById("part7");
+    var part1 = document.getElementById("part1");
+    var part2 = document.getElementById("part2");
+    var part3 = document.getElementById("part3");
+    var part4 = document.getElementById("part4");
+    var part5 = document.getElementById("part5");
+    var part6 = document.getElementById("part6");
+    var part7 = document.getElementById("part7");
 
     var sum = part1 + part2 + part3 + part4 + part5 + part6 + part7;
     var weeks = sum / 7;
