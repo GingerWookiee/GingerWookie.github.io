@@ -28,10 +28,10 @@
                 <li>Painting(both exterior and interior)</li>
                 <li>Final touches</li>
             </ol>
-            <button class="time">Time</button>
-            <button class="cost">Cost</button>
+            <button class="time" onclick="timeUp()">Time</button>
+            <button class="cost" onclick="costUp()">Cost</button>
 
-            <div>
+            <section id="time">
                 <h3>
                     This helps to calculate and keep trackof the time 
                     spent on the van conversion.
@@ -64,7 +64,7 @@
                 <br>
                 <button id="submit" onclick="calculate()">Claculate</button>
                 <div id="result"></div>
-            </div>
+            </section>
             <section id="cost">
                 <h3>
                     This helps to calculate and keep track of the costs 
