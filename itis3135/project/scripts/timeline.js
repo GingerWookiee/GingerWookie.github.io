@@ -24,16 +24,23 @@ function costUp()
 //Time Functionality
 function calculate()
 {
-    var part1 = paresInt(document.getElementById("part1").value);
-    var part2 = parseInt(document.getElementById("part2").value);
-    var part3 = parseInt(document.getElementById("part3").value);
-    var part4 = parseInt(document.getElementById("part4").value);
-    var part5 = parseInt(document.getElementById("part5").value);
-    var part6 = parseInt(document.getElementById("part6").value);
-    var part7 = parseInt(document.getElementById("part7").value);
+    var input1 = document.getElementById("part1").value;
+    var int1 = parseInt(input1);
+    var input2 = document.getElementById("part2").value;
+    var int2 = parseInt(input2);
+    var input3 = document.getElementById("part3").value;
+    var int3 = parseInt(input3);
+    var input4 = document.getElementById("part4").value;
+    var int4 = parseInt(input4);
+    var input5 = document.getElementById("part5").value;
+    var int5 = parseInt(input5);
+    var input6 = document.getElementById("part6").value;
+    var int6 = parseInt(input6);
+    var input7 = document.getElementById("part7").value;
+    var int7 = parseInt(input7);
 
-    var sum = part1 + part2 + part3 + part4 + part5 + part6 + part7;
-    var weeks = parseInt(sum / 7);
+    var sum = int1 + int2 + int3 + int4 + int5 + int6 + int7;
+    var weeks = sum / 7;
     var weekdays = sum % 7;
 
     document.getElementById("result").innerHTML = "<p>Your total number of days of work is " + sum.toString() + " days, <br> or " + weeks.toString() + " weeks and " + weekdays.toString() + " days.</p>";
