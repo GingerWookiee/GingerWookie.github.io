@@ -40,7 +40,8 @@ function calculate()
     var int7 = parseInt(input7);
 
     var sum = int1 + int2 + int3 + int4 + int5 + int6 + int7;
-    var weeks = sum / 7;
+    var weeksFloat = sum / 7;
+    var weeks = parseInt(weeksFloat);
     var weekdays = sum % 7;
 
     document.getElementById("result").innerHTML = "<p>Your total number of days of work is " + sum.toString() + " days, <br> or " + weeks.toString() + " weeks and " + weekdays.toString() + " days.</p>";
