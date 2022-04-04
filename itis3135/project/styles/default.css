@@ -86,8 +86,8 @@ h2
 
   .scroller
   {
-    background: none;
     border-color: #0E1C36;
-    color: #547AA5;
-    border-radius: 12px;
+    background-color: #547AA5;
+    color: white;
+    border-radius: 10px;
   }
