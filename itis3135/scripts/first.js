@@ -131,6 +131,6 @@ function daysToHours()
     var daysString = prompt("Enter a number of days: ");
     var days = parseInt(daysString);
     var hours = days * 24;
-    document.getElementById('hours').innerHTML = "The total hours of your days is: " + hours +" hrs";
+    document.getElementById("hours").innerHTML = "The total hours of your days is: " + hours +" hrs.";
 
 }
