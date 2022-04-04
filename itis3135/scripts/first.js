@@ -96,7 +96,7 @@ function daysToWeekend()
 }
 
 /*
- * from here to the end is about the Days Left in the Month
+ * from here to the next big comment is about the Days Left in the Month
 */
 var answer;
 
@@ -120,4 +120,17 @@ function setAnswer(newAnswer){
 
 function getAnswer(){
     return answer;
+}
+
+/*
+ * From here to the end is about converting days to hours
+*/
+
+function daysToHours()
+{
+    var daysString = prompt("Enter a number of days: ");
+    var days = parseInt(daysString);
+    var hours = days * 24;
+    document.getElementById('hours').innerHTML = "The total hours of your days is: " + hours +" hrs";
+
 }
