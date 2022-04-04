@@ -56,7 +56,7 @@ h2
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    background-color: black;
+    background-color: #0E1C36;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -67,7 +67,7 @@ h2
 
   .prev:hover, .next:hover
   {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(14,28,54,0.8);
   }
 
   .demo
