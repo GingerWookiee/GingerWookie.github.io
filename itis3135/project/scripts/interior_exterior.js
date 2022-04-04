@@ -5,5 +5,5 @@ function planScroll()
 
 function topScroll()
 {
-    document.getElementById("top").scrollIntoView({behavior: 'smooth'});
+    $('html, body').animate({ scrollTop: 0 }, 'smooth');
 }
