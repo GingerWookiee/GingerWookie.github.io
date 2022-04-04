@@ -50,6 +50,14 @@ main div
   text-align: center;
 }
 
+button
+{
+  background: none;
+  color: #0E1C36;
+  border-color: #547AA5;
+  border-radius: 7px;
+}
+
 .centered
 {
   margin-left: auto;
@@ -89,12 +97,4 @@ main div
     opacity: 1;
     background: none;
     border: none;
-  }
-
-  .scroller
-  {
-    background: none;
-    color: #0E1C36;
-    border-color: #547AA5;
-    border-radius: 7px;
   }
