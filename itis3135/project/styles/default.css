@@ -100,3 +100,9 @@ button
     background: none;
     border: none;
   }
+
+  .pic_right
+  {
+    display: grid;
+    grid-template-columns: 400px auto;
+  }
