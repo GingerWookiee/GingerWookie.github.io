@@ -1,10 +1,12 @@
 var x = 0;
+var input;
 var sideCount;
 var shapeName;
 
 function findShapeName()
 {
-    sideCount = parseFloat(prompt("Enter your number between 0 and 10:"));
+    input = prompt("Enter your number between 0 and 10:");
+    sideCount = parseFloat(input);
 
     while(x == 0)
     {
@@ -14,7 +16,8 @@ function findShapeName()
         }
         else
         {
-            sideCount = parseFloat(prompt("You did not enter a number, please enter a number between 0 and 10:"));
+            input = prompt("You did not enter a number, please enter a number between 0 and 10:");
+            sideCount = parseFloat(input);
         }
     }
 
