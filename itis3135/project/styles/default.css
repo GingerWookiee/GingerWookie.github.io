@@ -80,7 +80,8 @@ h4
   top: 40%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
+  margin-top: 0px;
+  margin-bottom: 5px;
   background-color: #0E1C36;
   color: white;
   font-weight: bold;
