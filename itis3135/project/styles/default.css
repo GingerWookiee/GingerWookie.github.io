@@ -122,7 +122,13 @@ h4
   grid-template-columns: auto 500px;
 }
 
-  .slim_top-bottom
+.slides_left
+{
+  display: grid;
+  grid-template-columns: auto 300px;
+}
+
+.slim_top-bottom
 {
   padding-top: 0px;
   padding-bottom: 0px;
