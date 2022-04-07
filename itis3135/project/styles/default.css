@@ -106,3 +106,9 @@ button
     display: grid;
     grid-template-columns: 400px auto;
   }
+
+  .pic_left
+  {
+    display: grid;
+    grid-template-columns: auto 500px;
+  }
