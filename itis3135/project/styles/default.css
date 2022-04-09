@@ -121,7 +121,7 @@ h4
 .pic_left
 {
   display: grid;
-  grid-template-columns: auto 500px;
+  grid-template-columns: 600px auto;
 }
 
 .slides_left
