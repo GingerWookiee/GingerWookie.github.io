@@ -78,10 +78,9 @@ h4
 .prev, .next
 {
   top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  margin-bottom: 5px;
+  width: 15px;
+  height: 30px;
+  padding: 5px;
   background-color: #0E1C36;
   color: white;
   font-weight: bold;
