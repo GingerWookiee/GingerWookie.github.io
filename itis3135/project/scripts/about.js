@@ -12,6 +12,8 @@ function allDown()
     document.getElementById("main3").style.display = "none";
     document.getElementById("main4").style.display = "none";
     document.getElementById("main5").style.display = "none";
+    document.getElementById("main6").style.display = "none";
+
 }
 
 function main1Up()
@@ -49,6 +51,13 @@ function main5Up()
     numberUp = 5;
 }
 
+function main6Up()
+{
+    allDown();
+    document.getElementById("main6").style.display = "block";
+    numberUp = 6;
+}
+
 function next()
 {
     switch(numberUp+1)
@@ -66,6 +75,9 @@ function next()
             main5Up();
             break;
         case 6:
+            main6Up();
+            break;
+        case 7:
             main1Up();
             break;
     }
@@ -76,7 +88,7 @@ function prev()
     switch(numberUp-1)
     {
         case 0:
-            main5Up();
+            main6Up();
             break;
         case 1:
             main1Up();
@@ -89,6 +101,9 @@ function prev()
             break;
         case 4:
             main4Up();
+            break;
+        case 5:
+            main5Up();
             break;
     }
 }
