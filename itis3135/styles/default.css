@@ -164,12 +164,6 @@ main div
 	grid-row: 2 / span 4;
   }
 
-  .container
-  {
-    text-align: center;
-    max-width: 20em;
-  }
-
   .prev, .next
   {
     top: 40%;
