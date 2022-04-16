@@ -23,14 +23,11 @@ function novemberUp() {
             {
                 $.each(this, function (key, value) 
                 {
-                    $("#speakers").append
-                    (
-                        "<h1>" + value.title + "</h1><br>" +
-                        "<h2>" + value.month + "</h2><br>" + 
-                        "<h3>" + value.speaker + "</h3><br>" +
-                        "<img src=\"" + value.image + "\" alt=\"" + + "\"><br>" +
-                        "<p>" + value.text + "</p>"
-                    );
+                    $("#title").text(value.title);
+                    $("#month").text(value.month);
+                    $("#speaker").text(value.speaker);
+                    $("#image").attr("src", value.image);
+                    $("#text").text(value.text);
                 });
             });
         }
