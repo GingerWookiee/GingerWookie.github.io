@@ -5,7 +5,7 @@ $(document).ready(function() {
 function novemberUp() {
     $.ajax({
         type: "get",
-        url: "sorkin.json",
+        url: "json_files/sorkin.json",
         beforeSend: function() 
         {
             $("#speakers").html("Loading...");
