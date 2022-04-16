@@ -2,10 +2,10 @@ $(document).ready(function() {
 	
 }); // end ready
 
-function novemberUp() {
+function partUp(x) {
     $.ajax({
         type: "get",
-        url: "json_files/sorkin.json",
+        url: "json_files/" + x + ".json",
         beforeSend: function() 
         {
             $("#speakers").html("Loading...");
