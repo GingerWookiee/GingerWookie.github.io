@@ -68,6 +68,11 @@ h4
   margin-bottom: 5px;
 }
 
+p
+{
+  text-align: left;
+}
+
 .centered
 {
   margin-left: auto;
