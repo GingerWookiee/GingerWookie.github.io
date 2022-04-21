@@ -43,6 +43,7 @@ h2
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-top: 0px;
 }
 
 main div
@@ -71,6 +72,8 @@ h4
 main p
 {
   text-align: left;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 ol
