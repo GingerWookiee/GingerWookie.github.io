@@ -73,6 +73,12 @@ main p
   text-align: left;
 }
 
+ol
+{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .centered
 {
   margin-left: auto;
