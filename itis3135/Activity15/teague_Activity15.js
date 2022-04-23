@@ -1,10 +1,10 @@
 $(document).ready(function()
 {
-    $.getJSON("facultyList.json", function (data)
+    $.getJSON("facultyList.json", function(data)
     {
-        $.each(data, function ()
+        $.each(data, function()
         {
-            $.each(this, function (key, value)
+            $.each(this, function(key, value)
             {
                 $("#faculty").append
                 (
